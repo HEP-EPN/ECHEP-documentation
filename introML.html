@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction to the basics &#8212; Documentation</title>
+    <title>Intro to Machine Learning (ML) for High Energy Physics &#8212; Documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,29 +107,19 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to our documentation book!
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="basics.html">
    Introduction to the basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introCMS.html">
+   Introduction to CMS Physics
   </a>
  </li>
 </ul>
@@ -223,7 +212,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/HEP-EPN/HEP-documentation/issues/new?title=Issue%20on%20page%20%2FECHEP.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/HEP-EPN/HEP-documentation/issues/new?title=Issue%20on%20page%20%2FintroML.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -251,7 +240,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/ECHEP.md"
+        <a href="_sources/introML.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -310,83 +299,39 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Introduction to the basics
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-known-issues">
+   Some known issues
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-cms-physics">
-   Introduction to CMS Physics
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-cern-cms-computing-basics">
-   Introduction to CERN/CMS Computing basics
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lxplus-machine">
-     Lxplus machine
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
+     3.1-dense-pytorch.ipynb
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#certificate">
-     Certificate
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
+     3.2-dense-bayesian-optimization.ipynb
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#voms">
-     VOMS
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#machine-learning-ml-for-high-energy-physics">
-   Machine Learning (ML) for High Energy Physics
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-known-issues">
-     Some known issues
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprocessing-ipynb">
+     4-preprocessing.ipynb
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
-       3.1-dense-pytorch.ipynb
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#notebook-restarts-after-running">
+       Notebook restarts after running
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
-       3.2-dense-bayesian-optimization.ipynb
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#downloading-files">
+       Downloading files
       </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#preprocessing-ipynb">
-       4-preprocessing.ipynb
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#notebook-restarts-after-running">
-         Notebook restarts after running
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#downloading-files">
-         Downloading files
-        </a>
-       </li>
-      </ul>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#useful-literature">
-   Useful literature
-  </a>
  </li>
 </ul>
 
@@ -397,7 +342,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to the basics</h1>
+                <h1>Intro to Machine Learning (ML) for High Energy Physics</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -407,83 +352,39 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Introduction to the basics
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-known-issues">
+   Some known issues
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-cms-physics">
-   Introduction to CMS Physics
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-cern-cms-computing-basics">
-   Introduction to CERN/CMS Computing basics
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lxplus-machine">
-     Lxplus machine
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
+     3.1-dense-pytorch.ipynb
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#certificate">
-     Certificate
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
+     3.2-dense-bayesian-optimization.ipynb
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#voms">
-     VOMS
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#machine-learning-ml-for-high-energy-physics">
-   Machine Learning (ML) for High Energy Physics
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-known-issues">
-     Some known issues
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprocessing-ipynb">
+     4-preprocessing.ipynb
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
-       3.1-dense-pytorch.ipynb
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#notebook-restarts-after-running">
+       Notebook restarts after running
       </a>
      </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
-       3.2-dense-bayesian-optimization.ipynb
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#downloading-files">
+       Downloading files
       </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#preprocessing-ipynb">
-       4-preprocessing.ipynb
-      </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#notebook-restarts-after-running">
-         Notebook restarts after running
-        </a>
-       </li>
-       <li class="toc-h4 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#downloading-files">
-         Downloading files
-        </a>
-       </li>
-      </ul>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#useful-literature">
-   Useful literature
-  </a>
  </li>
 </ul>
 
@@ -495,41 +396,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="introduction-to-the-basics">
-<h1>Introduction to the basics<a class="headerlink" href="#introduction-to-the-basics" title="Permalink to this headline">#</a></h1>
-<p>If you need a few tutorials/material to start with some basic languages/programs, here there is a (non-complete and ongoing) list of suggested tutorials:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html">Git</a>: Carpentry tutorials for the basics of how to use github/gitlab. This is useful to keep your code in a online repository.</p></li>
-<li><p><a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/">Python</a>: Carpentry tutorial for <code class="docutils literal notranslate"><span class="pre">python</span></code> and how to create plots using python tools.</p></li>
-<li><p><a class="reference external" href="https://root.cern/doc/master/group__Tutorials.html">Root</a>: THE software used in collider experiments. There are some examples in <code class="docutils literal notranslate"><span class="pre">C++</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p></li>
-<li><p><a class="reference external" href="https://docs.jupyter.org/en/latest/">Jupyter Notebook</a>: Jupyter notebooks are the way of creating code from your browser. This is the current standard in industry and it is growing quickly in research.</p></li>
-<li><p><a class="reference external" href="https://www.kaggle.com/">Kaggle</a>: the “social network” for data analysts. It is a set of public datasets and jupyter notebooks. Highly recommended.</p></li>
-<li><p><a class="reference external" href="https://www.kaggle.com/learn">Kaggle learn</a>: a set of tutorials in many tools used in data analysis in general. These tutorials are not focused in physics, but for data analyst’s.</p></li>
-<li><p><a class="reference external" href="https://colab.research.google.com">Google colab</a>: your jupyter notebooks in your google account.</p></li>
-</ul>
-</section>
-<section id="introduction-to-cms-physics">
-<h1>Introduction to CMS Physics<a class="headerlink" href="#introduction-to-cms-physics" title="Permalink to this headline">#</a></h1>
-<p>CMS has a series of schools with introductory topics for newcomers. A list of the latest schools:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://indico.cern.ch/event/1093833/timetable/#20220620">CMS Induction Course</a>: A set of talks introducing all the main aspects of CMS. From physics, management, detector, etc.</p></li>
-<li><p><a class="reference external" href="https://indico.cern.ch/event/1088671/timetable/">CMSDAS</a>: CMS Data Analysis School is a set of talks (with videos) focused on the main aspects of data analysis in CMS. <strong>Highly recommended</strong>. Here one can find examples, with working code, of analysis made at CMS.</p></li>
-</ul>
-</section>
-<section id="introduction-to-cern-cms-computing-basics">
-<h1>Introduction to CERN/CMS Computing basics<a class="headerlink" href="#introduction-to-cern-cms-computing-basics" title="Permalink to this headline">#</a></h1>
-<section id="lxplus-machine">
-<h2>Lxplus machine<a class="headerlink" href="#lxplus-machine" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="certificate">
-<h2>Certificate<a class="headerlink" href="#certificate" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="voms">
-<h2>VOMS<a class="headerlink" href="#voms" title="Permalink to this headline">#</a></h2>
-</section>
-</section>
-<section id="machine-learning-ml-for-high-energy-physics">
-<h1>Machine Learning (ML) for High Energy Physics<a class="headerlink" href="#machine-learning-ml-for-high-energy-physics" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="intro-to-machine-learning-ml-for-high-energy-physics">
+<h1>Intro to Machine Learning (ML) for High Energy Physics<a class="headerlink" href="#intro-to-machine-learning-ml-for-high-energy-physics" title="Permalink to this headline">#</a></h1>
 <p>As a first introduction to what CMS is doing with ML, it is strongly recommended to follow the CMSDAS tutorial. <a class="reference external" href="https://indico.cern.ch/event/1088671/timetable/#90-period-5-short-exercise-mac">Link</a>.</p>
 <p><em>I suggest you to watch the <a class="reference external" href="https://indico.cern.ch/event/1088671/contributions/4577023/attachments/2330165/4045725/GMT20220104-211221_Recording_1920x1120.mp4">lecture</a> and follow the <a class="reference external" href="https://indico.cern.ch/event/1088671/contributions/4577023/attachments/2330165/4045705/CMSDAS2021_ML_04Jan2022.pdf">slides</a>.</em></p>
 <p>As a <strong>first step</strong> towards getting used to ML tools, I suggest you to use the CMSDAS material in the <a class="reference external" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1z8vfuMn7AhWSm2oFHShpDL4QFnoECA0QAQ&amp;url=https%3A%2F%2Fswan.cern.ch%2F&amp;usg=AOvVaw3NDWvDkT5W57BkQ8-V3xGq">CERN SWAN</a>. SWAN is a hub created at CERN with many tools needed for CERN data analysis. For more information about SWAN follow <a class="reference external" href="https://swan.docs.cern.ch/intro/what_is/">this link</a>. Contact me if you dont have access to SWAN.</p>
@@ -598,15 +466,6 @@ If you have a problem with <code class="docutils literal notranslate"><span clas
 </section>
 </section>
 </section>
-<section id="useful-literature">
-<h1>Useful literature<a class="headerlink" href="#useful-literature" title="Permalink to this headline">#</a></h1>
-<ul class="simple">
-<li><p><a class="reference external" href="https://indico.cern.ch/event/619370/">Machine Learning Lectures</a> Set of ML lectures with videos at CERN by Michael Kagan (SLAC)</p></li>
-<li><p><a class="reference external" href="https://arxiv.org/abs/1803.08823">A high-bias, low-variance introduction to Machine Learning for physicists</a> A good introduction to ML for physicists (with code!).</p></li>
-<li><p><a class="reference external" href="https://cms-ml.github.io/documentation/">CMS ML Group</a>: Website of the ML group at CMS.</p></li>
-<li><p><a class="reference external" href="https://iml-wg.github.io/HEPML-LivingReview/">A Living Review of Machine Learning for Particle Physics</a>: <strong>THE</strong> compilation of papers on ML for High Energy Physics.</p></li>
-</ul>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -635,13 +494,6 @@ If you have a problem with <code class="docutils literal notranslate"><span clas
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="markdown-notebooks.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Notebooks with MyST Markdown</p>
-        </div>
-    </a>
 </div>
             </footer>
         </div>

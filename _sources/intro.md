@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Welcome to our documentation book!
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This website provides with tutorials and information for all the members of the CMS Ecuador community. The material here by no means is the only one available online to get started with High Energy Physics research, but it is our selection to guide newcomers.
 
-Check out the content pages bundled with this sample book to see more.
+**This book is in progress**, and therefore all the content can change from time to time.
+
+Check out the following links:
 
 ```{tableofcontents}
 ```
