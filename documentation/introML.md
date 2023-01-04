@@ -1,54 +1,4 @@
----
-layout: distill
-permalink: /ECHEP/
-title: Ecuadorian High Energy Physics Group
-description: A set of quick instructions to get started
-date: December 2022
-bibliography: portfolio.bib
-nav: false
-img: assets/img/ECHEP/CMSecuador.png
-importance: 1
-category: work
-toc:
-  - name: Introduction to the basics
-    # if a section has subsections, you can add them as follows:
-    # subsections:
-    #   - name: Example Child Subsection 1
-    #   - name: Example Child Subsection 2
-  - name: Introduction to CMS Physics
-  - name: Machine Learning (ML) for High Energy Physics
-  - name: Useful literature
----
-
-## Introduction to the basics
-
-If you need a few tutorials/material to start with some basic languages/programs, here there is a (non-complete and ongoing) list of suggested tutorials:
-
- * [Git](https://swcarpentry.github.io/git-novice/index.html): Carpentry tutorials for the basics of how to use github/gitlab. This is useful to keep your code in a online repository.
- * [Python](https://swcarpentry.github.io/python-novice-inflammation/): Carpentry tutorial for `python` and how to create plots using python tools.
- * [Root](https://root.cern/doc/master/group__Tutorials.html): THE software used in collider experiments. There are some examples in `C++` and `python`.
- * [Jupyter Notebook](https://docs.jupyter.org/en/latest/): Jupyter notebooks are the way of creating code from your browser. This is the current standard in industry and it is growing quickly in research.
- * [Kaggle](https://www.kaggle.com/): the "social network" for data analysts. It is a set of public datasets and jupyter notebooks. Highly recommended.
- * [Kaggle learn](https://www.kaggle.com/learn): a set of tutorials in many tools used in data analysis in general. These tutorials are not focused in physics, but for data analyst's.
- * [Google colab](https://colab.research.google.com): your jupyter notebooks in your google account.
-
-## Introduction to CMS Physics
-
-CMS has a series of schools with introductory topics for newcomers. A list of the latest schools:
-
- * [CMS Induction Course](https://indico.cern.ch/event/1093833/timetable/#20220620): A set of talks introducing all the main aspects of CMS. From physics, management, detector, etc.
- * [CMSDAS](https://indico.cern.ch/event/1088671/timetable/): CMS Data Analysis School is a set of talks (with videos) focused on the main aspects of data analysis in CMS. **Highly recommended**. Here one can find examples, with working code, of analysis made at CMS.
-
-## Introduction to CERN/CMS Computing basics
-
-### Lxplus machine
-
-### Certificate
-
-### VOMS
-
-
-## Machine Learning (ML) for High Energy Physics
+# Intro to Machine Learning (ML) for High Energy Physics
 
 As a first introduction to what CMS is doing with ML, it is strongly recommended to follow the CMSDAS tutorial. [Link](https://indico.cern.ch/event/1088671/timetable/#90-period-5-short-exercise-mac).
 
@@ -129,11 +79,3 @@ Once you properly modify this line, you can run it once because it will download
 If you have any technical problem, dont hesitate on contacting me on mattermost.
 
 **More to come**
-
-
-## Useful literature
-
- * [Machine Learning Lectures](https://indico.cern.ch/event/619370/) Set of ML lectures with videos at CERN by Michael Kagan (SLAC)
- * [A high-bias, low-variance introduction to Machine Learning for physicists](https://arxiv.org/abs/1803.08823) A good introduction to ML for physicists (with code!).
- * [CMS ML Group](https://cms-ml.github.io/documentation/): Website of the ML group at CMS.
- * [A Living Review of Machine Learning for Particle Physics](https://iml-wg.github.io/HEPML-LivingReview/): **THE** compilation of papers on ML for High Energy Physics.
