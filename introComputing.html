@@ -200,35 +200,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/HEP-EPN/HEP-documentation/main?urlpath=tree/documents/introComputing.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -295,23 +266,6 @@ title="Open an issue"
   </button>
   <div class="menu-dropdown__content">
     <ul>
-      <li>
-        <a href="_sources/introComputing.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
       <li>
         <a href="_sources/introComputing.md"
    class="headerbtn"
@@ -431,29 +385,7 @@ title="Print to PDF"
 <h2>ML with docker containers<a class="headerlink" href="#ml-with-docker-containers" title="Permalink to this headline">#</a></h2>
 <p>As a first step into develop our computing resources we will develop a docker container with some <a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/">python</a> and <a class="reference external" href="https://root.cern/doc/master/group__Tutorials.html">ROOT</a> libraries. We will focus on a <a class="reference external" href="https://github.com/alefisico/machine-learning-das">modified version</a> of <a class="reference external" href="https://indico.cern.ch/event/1088671/timetable/#90-period-5-short-exercise-mac">this tutorial</a>, which contains all the libraries we need for further studies.</p>
 <p>The docker container is located in this <a class="reference external" href="https://hub.docker.com/repository/docker/alefisico/echep/general">Docker Hub repo</a>, which can be downloaded as:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">alefisico</span><span class="o">/</span><span class="n">echep</span><span class="p">:</span><span class="n">v0</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="n">docker</span> <span class="n">pull</span> <span class="n">alefisico</span><span class="o">/</span><span class="n">echep</span><span class="p">:</span><span class="n">v0</span>
-           <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
 <p>And it can be run as:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8888</span><span class="p">:</span><span class="mi">8888</span> <span class="n">alefisico</span><span class="o">/</span><span class="n">echep</span><span class="p">:</span><span class="n">v0</span>
-</pre></div>
-</div>
-</div>
-</div>
 <p>The output of this will be something like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>...
 [C 19:49:38.011 NotebookApp]
