@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction to the basics &#8212; Documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction to the basics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/HEP-EPN/HEP-documentation"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/HEP-EPN/HEP-documentation/issues/new?title=Issue%20on%20page%20%2FECHEP.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/ECHEP.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction to the basics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-cms-physics">
+   Introduction to CMS Physics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-cern-cms-computing-basics">
+   Introduction to CERN/CMS Computing basics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lxplus-machine">
+     Lxplus machine
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#certificate">
+     Certificate
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voms">
+     VOMS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#machine-learning-ml-for-high-energy-physics">
+   Machine Learning (ML) for High Energy Physics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-known-issues">
+     Some known issues
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
+       3.1-dense-pytorch.ipynb
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
+       3.2-dense-bayesian-optimization.ipynb
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#preprocessing-ipynb">
+       4-preprocessing.ipynb
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#notebook-restarts-after-running">
+         Notebook restarts after running
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#downloading-files">
+         Downloading files
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#useful-literature">
+   Useful literature
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction to the basics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction to the basics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-cms-physics">
+   Introduction to CMS Physics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-cern-cms-computing-basics">
+   Introduction to CERN/CMS Computing basics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lxplus-machine">
+     Lxplus machine
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#certificate">
+     Certificate
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voms">
+     VOMS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#machine-learning-ml-for-high-energy-physics">
+   Machine Learning (ML) for High Energy Physics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-known-issues">
+     Some known issues
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dense-pytorch-ipynb">
+       3.1-dense-pytorch.ipynb
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#dense-bayesian-optimization-ipynb">
+       3.2-dense-bayesian-optimization.ipynb
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#preprocessing-ipynb">
+       4-preprocessing.ipynb
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#notebook-restarts-after-running">
+         Notebook restarts after running
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#downloading-files">
+         Downloading files
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#useful-literature">
+   Useful literature
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="introduction-to-the-basics">
+<h1>Introduction to the basics<a class="headerlink" href="#introduction-to-the-basics" title="Permalink to this headline">#</a></h1>
+<p>If you need a few tutorials/material to start with some basic languages/programs, here there is a (non-complete and ongoing) list of suggested tutorials:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swcarpentry.github.io/git-novice/index.html">Git</a>: Carpentry tutorials for the basics of how to use github/gitlab. This is useful to keep your code in a online repository.</p></li>
+<li><p><a class="reference external" href="https://swcarpentry.github.io/python-novice-inflammation/">Python</a>: Carpentry tutorial for <code class="docutils literal notranslate"><span class="pre">python</span></code> and how to create plots using python tools.</p></li>
+<li><p><a class="reference external" href="https://root.cern/doc/master/group__Tutorials.html">Root</a>: THE software used in collider experiments. There are some examples in <code class="docutils literal notranslate"><span class="pre">C++</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p></li>
+<li><p><a class="reference external" href="https://docs.jupyter.org/en/latest/">Jupyter Notebook</a>: Jupyter notebooks are the way of creating code from your browser. This is the current standard in industry and it is growing quickly in research.</p></li>
+<li><p><a class="reference external" href="https://www.kaggle.com/">Kaggle</a>: the “social network” for data analysts. It is a set of public datasets and jupyter notebooks. Highly recommended.</p></li>
+<li><p><a class="reference external" href="https://www.kaggle.com/learn">Kaggle learn</a>: a set of tutorials in many tools used in data analysis in general. These tutorials are not focused in physics, but for data analyst’s.</p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com">Google colab</a>: your jupyter notebooks in your google account.</p></li>
+</ul>
+</section>
+<section id="introduction-to-cms-physics">
+<h1>Introduction to CMS Physics<a class="headerlink" href="#introduction-to-cms-physics" title="Permalink to this headline">#</a></h1>
+<p>CMS has a series of schools with introductory topics for newcomers. A list of the latest schools:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://indico.cern.ch/event/1093833/timetable/#20220620">CMS Induction Course</a>: A set of talks introducing all the main aspects of CMS. From physics, management, detector, etc.</p></li>
+<li><p><a class="reference external" href="https://indico.cern.ch/event/1088671/timetable/">CMSDAS</a>: CMS Data Analysis School is a set of talks (with videos) focused on the main aspects of data analysis in CMS. <strong>Highly recommended</strong>. Here one can find examples, with working code, of analysis made at CMS.</p></li>
+</ul>
+</section>
+<section id="introduction-to-cern-cms-computing-basics">
+<h1>Introduction to CERN/CMS Computing basics<a class="headerlink" href="#introduction-to-cern-cms-computing-basics" title="Permalink to this headline">#</a></h1>
+<section id="lxplus-machine">
+<h2>Lxplus machine<a class="headerlink" href="#lxplus-machine" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="certificate">
+<h2>Certificate<a class="headerlink" href="#certificate" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="voms">
+<h2>VOMS<a class="headerlink" href="#voms" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section id="machine-learning-ml-for-high-energy-physics">
+<h1>Machine Learning (ML) for High Energy Physics<a class="headerlink" href="#machine-learning-ml-for-high-energy-physics" title="Permalink to this headline">#</a></h1>
+<p>As a first introduction to what CMS is doing with ML, it is strongly recommended to follow the CMSDAS tutorial. <a class="reference external" href="https://indico.cern.ch/event/1088671/timetable/#90-period-5-short-exercise-mac">Link</a>.</p>
+<p><em>I suggest you to watch the <a class="reference external" href="https://indico.cern.ch/event/1088671/contributions/4577023/attachments/2330165/4045725/GMT20220104-211221_Recording_1920x1120.mp4">lecture</a> and follow the <a class="reference external" href="https://indico.cern.ch/event/1088671/contributions/4577023/attachments/2330165/4045705/CMSDAS2021_ML_04Jan2022.pdf">slides</a>.</em></p>
+<p>As a <strong>first step</strong> towards getting used to ML tools, I suggest you to use the CMSDAS material in the <a class="reference external" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1z8vfuMn7AhWSm2oFHShpDL4QFnoECA0QAQ&amp;url=https%3A%2F%2Fswan.cern.ch%2F&amp;usg=AOvVaw3NDWvDkT5W57BkQ8-V3xGq">CERN SWAN</a>. SWAN is a hub created at CERN with many tools needed for CERN data analysis. For more information about SWAN follow <a class="reference external" href="https://swan.docs.cern.ch/intro/what_is/">this link</a>. Contact me if you dont have access to SWAN.</p>
+<p>In SWAN you will be asked about the environment you need to create, at this moment you can use the default settings and click on <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">my</span> <span class="pre">Session</span></code>.</p>
+<img src="https://codimd.web.cern.ch/uploads/upload_734ab2206b1d5c9222fd4faf5282260d.png" alt="drawing" width="400"/>
+<p>Once you access your SWAN projects, you can include directly github repositories by click on the button next to the plus button.</p>
+<img src="https://codimd.web.cern.ch/uploads/upload_094a01da472ebfa750df5aa0411369ac.png" alt="drawing" width="400"/>
+<p>There you can add the github link <code class="docutils literal notranslate"><span class="pre">https://github.com/FNALLPC/machine-learning-das.git</span></code> from the <a class="reference external" href="https://github.com/FNALLPC/machine-learning-das">repository</a>. After this, you will have all the jupiter notebooks in SWAN ready to run. You must start with the <code class="docutils literal notranslate"><span class="pre">0-setup-libraries.ipynb</span></code> notebook, which it will create the environment you need for the rest of the notebooks.</p>
+<p>Jupyter notebooks are a wonderful tool to teach and to learn coding. However, since you have working code there, it is easy just to run it once and do not understand what the code is doing. I strongly suggest you to take your time to see what the example is doing. Literally play as much as you can with it.</p>
+<section id="some-known-issues">
+<h2>Some known issues<a class="headerlink" href="#some-known-issues" title="Permalink to this headline">#</a></h2>
+<section id="dense-pytorch-ipynb">
+<h3>3.1-dense-pytorch.ipynb<a class="headerlink" href="#dense-pytorch-ipynb" title="Permalink to this headline">#</a></h3>
+<p>This notebook is <em>optional</em>, you can continue to notebook 4 without loosing any major information.
+If you have a problem with <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">torch</span></code>, you need to modify the first cell. From:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!{sys.executable} -m pip install torch torchvision root_pandas --user
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!{sys.executable} -m pip install torch --user
+</pre></div>
+</div>
+<p>Then you can run it without problems.</p>
+</section>
+<section id="dense-bayesian-optimization-ipynb">
+<h3>3.2-dense-bayesian-optimization.ipynb<a class="headerlink" href="#dense-bayesian-optimization-ipynb" title="Permalink to this headline">#</a></h3>
+<p>This notebook relies on the <code class="docutils literal notranslate"><span class="pre">skopt</span></code> package, which is recommended to use with <code class="docutils literal notranslate"><span class="pre">python3</span></code>. The current environment has <code class="docutils literal notranslate"><span class="pre">python2.7</span></code>. We can fix this issue, but for now it is not necessary.</p>
+</section>
+<section id="preprocessing-ipynb">
+<h3>4-preprocessing.ipynb<a class="headerlink" href="#preprocessing-ipynb" title="Permalink to this headline">#</a></h3>
+<section id="notebook-restarts-after-running">
+<h4>Notebook restarts after running<a class="headerlink" href="#notebook-restarts-after-running" title="Permalink to this headline">#</a></h4>
+<p>This only means that you might need to change your environment. Go back to your main SWAN folder and in the top right, click on the three dots. There, find the option <code class="docutils literal notranslate"><span class="pre">change</span> <span class="pre">configuration</span></code>, which it will bring you back to the settings. In my test, it work perfectly with 16 Gb.</p>
+</section>
+<section id="downloading-files">
+<h4>Downloading files<a class="headerlink" href="#downloading-files" title="Permalink to this headline">#</a></h4>
+<p>In this notebook, you need to access some files that exist only in the CERN storage area. For that you need to set your certificate in lxplus. If you have never installed your certificate in lxplus, please follow <a class="reference external" href="https://ca.cern.ch/ca/Help/?kbid=024010">this instructions</a>.</p>
+<p>Then, in lxplus, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">voms</span><span class="o">-</span><span class="n">proxy</span><span class="o">-</span><span class="n">init</span> <span class="o">-</span><span class="n">rfc</span> <span class="o">-</span><span class="n">voms</span> <span class="n">cms</span> <span class="o">--</span><span class="n">valid</span> <span class="mi">168</span><span class="p">:</span><span class="mi">00</span>
+</pre></div>
+</div>
+<p>it will print a message containing some information and a line that looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Created</span> <span class="n">proxy</span> <span class="ow">in</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">x509up_u99999</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>These file contains a certificate that you need to copy to your cernbox. To do that, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">x509up_u99999</span> <span class="o">/</span><span class="n">eos</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">X</span><span class="o">/</span><span class="n">USER</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">x509up_u15148</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">USER</span></code> depends on <em>YOUR</em> user. For instance if your cern user is agomez then <code class="docutils literal notranslate"><span class="pre">X=a</span></code> and <code class="docutils literal notranslate"><span class="pre">USER=agomez</span></code>.</p>
+<p>Then in the notebook <code class="docutils literal notranslate"><span class="pre">4-preprocessing.ipynb</span></code>, in the first cell right after <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span></code>, copy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">##### REMEMBER TO MANUALLY COPY THE PROXY TO YOUR CERNBOX FOLDER AND TO MODIFY THE NEXT LINE</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;X509_USER_PROXY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;/eos/home-X/USER/tmp/x509up_u99999&#39;</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;X509_USER_PROXY&#39;</span><span class="p">]):</span> <span class="k">pass</span>
+<span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;os.environ[&#39;X509_USER_PROXY&#39;] &quot;</span><span class="p">,</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;X509_USER_PROXY&#39;</span><span class="p">])</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;X509_CERT_DIR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;/cvmfs/cms.cern.ch/grid/etc/grid-security/certificates&#39;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;X509_VOMS_DIR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;/cvmfs/cms.cern.ch/grid/etc/grid-security/vomsdir&#39;</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">USER</span></code> follows the same notation as before.</p>
+<p>Once you properly modify this line, you can run it once because it will download many files needed and it will take a lot of time.</p>
+<p>If you have any technical problem, dont hesitate on contacting me on mattermost.</p>
+<p><strong>More to come</strong></p>
+</section>
+</section>
+</section>
+</section>
+<section id="useful-literature">
+<h1>Useful literature<a class="headerlink" href="#useful-literature" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://indico.cern.ch/event/619370/">Machine Learning Lectures</a> Set of ML lectures with videos at CERN by Michael Kagan (SLAC)</p></li>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1803.08823">A high-bias, low-variance introduction to Machine Learning for physicists</a> A good introduction to ML for physicists (with code!).</p></li>
+<li><p><a class="reference external" href="https://cms-ml.github.io/documentation/">CMS ML Group</a>: Website of the ML group at CMS.</p></li>
+<li><p><a class="reference external" href="https://iml-wg.github.io/HEPML-LivingReview/">A Living Review of Machine Learning for Particle Physics</a>: <strong>THE</strong> compilation of papers on ML for High Energy Physics.</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="markdown-notebooks.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Alejandro Gomez Espinosa<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
