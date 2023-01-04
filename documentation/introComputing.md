@@ -6,13 +6,13 @@ As a first step into develop our computing resources we will develop a docker co
 
 The docker container is located in this [Docker Hub repo](https://hub.docker.com/repository/docker/alefisico/echep/general), which can be downloaded as:
 
-```{code-cell}
+```
 docker pull alefisico/echep:v0
 ```
 
 And it can be run as:
 
-```{code-cell}
+```
 docker run -it -p 8888:8888 alefisico/echep:v0
 ```
 
