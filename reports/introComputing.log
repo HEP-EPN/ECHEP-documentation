@@ -17,13 +17,13 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-docker push alefisico/echep:v0
+docker pull alefisico/echep:v0
 ------------------
 
 [0;36m  Cell [0;32mIn[1], line 1[0;36m[0m
-[0;31m    docker push alefisico/echep:v0[0m
+[0;31m    docker pull alefisico/echep:v0[0m
 [0m           ^[0m
 [0;31mSyntaxError[0m[0;31m:[0m invalid syntax
 
-SyntaxError: invalid syntax (2948188711.py, line 1)
+SyntaxError: invalid syntax (615048309.py, line 1)
 

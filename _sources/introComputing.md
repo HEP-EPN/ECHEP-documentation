@@ -22,7 +22,7 @@ As a first step into develop our computing resources we will develop a docker co
 The docker container is located in this [Docker Hub repo](https://hub.docker.com/repository/docker/alefisico/echep/general), which can be downloaded as:
 
 ```{code-cell}
-docker push alefisico/echep:v0
+docker pull alefisico/echep:v0
 ```
 
 And it can be run as:
@@ -51,4 +51,4 @@ The books need to run the kernel called `python-analysis-env`.
 
 ### Data for the tutorials
 
-In this version (v0) of the docker, the data for notebooks 4 and above is located inside the container, in the `data/` folder. This data is located [here](https://cernbox.cern.ch/remote.php/dav/public-files/MBdDqUTlNiRpuLo/data.tar.gz). As a next step, we can try to locate these data outside the container and develop a way to access it through the docker/kubernetes tools. 
+In this version (v0) of the docker, the data for notebooks 4 and above is located inside the container, in the `data/` folder. This data is located [here](https://cernbox.cern.ch/remote.php/dav/public-files/MBdDqUTlNiRpuLo/data.tar.gz). As a next step, we can try to locate these data outside the container and develop a way to access it through the docker/kubernetes tools.
