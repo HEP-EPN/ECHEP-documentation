@@ -6,3 +6,6 @@ root: intro
 chapters:
 - file: basics
 - file: introCMS
+- file: introComputingCERN
+- file: introML
+- file: literature
